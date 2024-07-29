@@ -1,4 +1,7 @@
 /* INI CSS*/
+html{
+    background-color: rgb(254, 226, 185);
+}
 
 nav 
 {
@@ -12,15 +15,31 @@ nav
 .logo-icon
 {
     
-    background-image: url(https://cdn.dribbble.com/users/2348/screenshots/10696082/media/4a24583ea649f9df1415775a37c84ae5.png);
+    background-image: url(https://th.bing.com/th/id/R.5662141ef870b5eb6de552f53d59d571?rik=%2fQpFwONlLG5WoA&riu=http%3a%2f%2fwww.worldatlas.com%2fr%2fw1200-h630-c1200x630%2fupload%2f2d%2fd4%2fa7%2funtitled-design-153.jpg&ehk=r2YnmdcDPhyTIq3BD81Av17GAwHpACH4eMHLJYz%2fFxg%3d&risl=&pid=ImgRaw&r=0);
     width: 60px;
     height: 40px;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .nav-container 
 {
     display: flex;
+    font-size: 20px;
+    
+}
+
+.li-navbar:hover {
+    background-color: rgb(205, 226, 244);
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+}
+
+.li-navbar {
+    list-style-type: none;
+    color:rgb(0, 0, 0);
+    margin: 2px;
+    font: 30px;
+    padding: 10px;
 }
 
 .nav-item
@@ -42,9 +61,9 @@ nav
 
 .main-content-item
 {    
-    background-color: aliceblue;
+    background-color: rgb(210, 234, 255);
     width: 100%;
-    height: 500px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,19 +71,20 @@ nav
 
 .main-content-banner
 {
-    height: 250px;
+    margin-top: 5%;
+    height: 300px;
     width: 85%;   
-    background-image: url(https://cdn.dribbble.com/users/2348/screenshots/10696082/media/4a24583ea649f9df1415775a37c84ae5.png);
-    background-size: cover;
+    background-image: url(https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15b1636aac03.07706452.jpeg);
+    background-size: 100%;
 }
 
 .item-icon
 {
     height: 55px;
     width: 55px;
-    background-image: url(https://th.bing.com/th/id/R.3b19f2fc1e6a3b7dd2c902e2fcb5d817?rik=Ey23yN%2fa0JvFtQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-8kxDKV4h3VU%2fUb8nKiemfSI%2fAAAAAAAAAZQ%2fN4Om8E7fHcg%2fw1200-h630-p-k-no-nu%2fLogo%2bJKT48.JPG&ehk=fcKuUvznL8lWZY6ypMyFHfel5GBMFvO5PMnRZPIqsQc%3d&risl=&pid=ImgRaw&r=0);
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/26/57/greeting-series-welcome-to-japan-vector-4132657.jpg);
     border-radius:50%;
-    background-size:cover;
+    background-size: cover;
 }
 
 .main-item
@@ -87,11 +107,116 @@ input
   background-color:rgb(200, 219, 212);
 }
 
+.li-navbar button{
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+
 button 
 {
     width: 75%;
     height: 50px;
     background-color: rgb(135, 248, 133);
     border-radius: 4px;
+}
+
+.name-item 
+{
+    text-align: center;
+}
+
+.images 
+{
+    display: flex;
+    width: 100%;
+    transition: 2s;
+
+}
+
+
+.images img {
+    width: 100%;
+}
+
+.images-wrapper 
+{
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#slide-1:target ~ .images
+{
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .images
+{
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .images
+{
+    margin-left: -200%;
+}
+#slide-4:target ~ .images
+{
+    margin-left: -300%;
+}
+
+#slide-5:target ~ .images
+{
+    margin-left: -400%;
+}
+
+#slide-6:target ~ .images
+{
+    margin-left: -500%;
+}
+
+.navigation a
+{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #0b0b0b;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 4px;
+    transition: 1s;
+}
+
+.navigation a:hover
+{
+    background-color: #666;
+}
+
+.navigation 
+{
+    text-align: center;
+    
+}
+
+@media screen and (max-width:800px) 
+{
+    .images-wrapper
+    {
+        width: 90%;
+    }
+    .main-content{
+        width: 90%;
+    }
+    .main-content-banner{
+        width: 90%;
+    }
+}
+
+.text-footer {
+
+    margin: 4px;
+    height: 800px;
+    text-align: left;
 }
 
