@@ -1,11 +1,11 @@
 /* INI CSS*/
-html{
+html
+{
     background-color: rgb(254, 226, 185);
 }
 
 nav 
-{
-    
+{    
     display: flex;
     justify-content: space-between;
     padding: 12px;
@@ -28,13 +28,15 @@ nav
     
 }
 
-.li-navbar:hover {
+.li-navbar:hover 
+{
     background-color: rgb(205, 226, 244);
     transition: .5s ease-in-out;
     transition-delay: .3s;
 }
 
-.li-navbar {
+.li-navbar 
+{
     list-style-type: none;
     color:rgb(0, 0, 0);
     margin: 2px;
@@ -85,6 +87,8 @@ nav
     background-image: url(https://cdn3.vectorstock.com/i/1000x1000/26/57/greeting-series-welcome-to-japan-vector-4132657.jpg);
     border-radius:50%;
     background-size: cover;
+    margin-right: 5%;
+    
 }
 
 .main-item
@@ -92,6 +96,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 input
@@ -107,7 +112,8 @@ input
   background-color:rgb(200, 219, 212);
 }
 
-.li-navbar button{
+.li-navbar button
+{
     border: none;
     width: 70px;
     height: 70px;
@@ -135,7 +141,8 @@ button
 }
 
 
-.images img {
+.images img 
+{
     width: 100%;
 }
 
@@ -205,18 +212,58 @@ button
     {
         width: 90%;
     }
-    .main-content{
+    .main-content
+    {
         width: 90%;
     }
-    .main-content-banner{
+    .main-content-banner
+    {
         width: 90%;
     }
+    .text-footer
+    {
+        width: 90%;
+    }
+    
 }
 
-.text-footer {
-
+.text-footer 
+{
+    font-size: 15px;
     margin: 4px;
-    height: 800px;
-    text-align: left;
+    height: 100px;
+    display: flex;
+    margin: 10px;
 }
 
+.parent
+{
+    display: flex;
+    margin: 12px;
+    justify-content: center;
+    height: 400px;
+}
+
+.footer-icon, .footer-icon-1, .footer-icon-2, .footer-icon-3, .footer-icon-4, .footer-icon-5
+{
+    height: 40px;
+    width: 40px;
+    background-image: url(https://icon-library.com/images/country-icon/country-icon-25.jpg);
+    border-radius:50%;
+    background-size: cover;
+    margin: 25px;
+    display: flex;
+    padding: 15px;
+}
+
+.footer-text
+{
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-top: 120px;
+    margin-left: -95px;
+    border-radius: 4%;
+}
